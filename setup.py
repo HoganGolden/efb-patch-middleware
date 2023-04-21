@@ -15,16 +15,16 @@ exec(open(version_path).read())
 long_description = open('README.md', encoding="utf-8").read()
 
 setup(
-    name='efb-patch-middleware',
+    name='efb-patch-middleware-itchat-uos',
     packages=find_packages(
         exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     version=__version__,
     description='Patch middleware for EH Forwarder Bot, enhance functions.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author='WolfSilver',
-    author_email='aexou@outlook.com',
-    url='https://github.com/efb-middleware/patch',
+    author='HoganKing',
+    author_email='',
+    url='https://github.com/HoganGolden/efb-patch-middleware',
     license='AGPLv3+',
     include_package_data=True,
     python_requires='>=3.6',
@@ -43,7 +43,7 @@ setup(
     install_requires=[
         "ehforwarderbot",
         "efb_telegram_master",
-        "efb_wechat_slave",
+        "efb-wechat-slave-itchat-uos",
         "python-telegram-bot",
         "peewee",
         "PyYaml",
